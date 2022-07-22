@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Helps remove white border around background */
+    text-decoration: none; /* Removes the underline from the text */
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+   
+   
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: #9d9c9c;
+       
+}
+
+
+.footer {
+    width: 80%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Helps center the text of the footer */
+    margin-right: 35rem; /* Helps center the text of the footer */
+    
+
+}
+
+.footer-heading-1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-top: 50px;
+    
+}
+
+.footer-heading-2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading-3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading-4 {
+    position: absolute;
+    bottom: 0; /* Positions the footer */
+    height: 5vh;
+    font-size: 10px;
+}
+
+.btn-primary {
+    background-color: #f94230;
+    outline: none;
+    border: none;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 85px;
+    height: 24px;
+    border-color: #f94230;
+    border-radius: 3px;
+    color: white;
+    
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    background-color: #9a1c11;
+}
+
+#footer-email {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    height: 23px;
+    width: 225px;
+    text-align: center;
+    
+}
+
+#footer-email::placeholder {
+    color: rgb(162, 162, 162);
+}
+
+
+@media screen and (max-width: 1020px) { /* Max width for a mobile device and then will hide .footer-heading-3 (Social Media) */
+ .footer-heading-3 {
+    display: none;
+}
+}
